@@ -1,9 +1,9 @@
 {% if page.chart or page.jquery %}{% else %}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>/*<![CDATA[*/window.jQuery||document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.11.1.min.js"><\/script>');/*]]>*/</script>{% endif %}
-<script>var twitterAccount="hmfaysal";</script>
+<script>var weiboAccount="学无才";</script>
 <div class="shareTooltip" id="shareTooltip">
-<div class="tooltipContainer"><a id="sendToTwitter" href="" class="sharingLink twitter"><span></span></a></div>
+<div class="tooltipContainer"><a id="sendToWeibo" href="" class="sharingLink weibo"><span></span></a></div>
 </div>
 <script>!function(f,a,g){var e,b=f.getElementsByTagName(a)[0],c=/^http:/.test(f.location)?"http":"https";if(!f.getElementById(g)){e=f.createElement(a);e.id=g;e.src=c+"://platform.twitter.com/widgets.js";b.parentNode.insertBefore(e,b)}}(document,"script","twitter-wjs");</script>
 {% if page.imagefeature %}<script src="{{ site.url }}/assets/js/vendor/background-check.js"></script>
@@ -11,7 +11,7 @@
 <script src="{{ site.url }}/assets/js/notepad.js"></script>
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
 <script src="{{ site.url }}/assets/js/vendor/selectshare.js"></script>
-<script type='text/javascript'>console.log("HMFaysal's Blog Version 2.0");</script>
+<script type='text/javascript'>console.log("Welcome to lvgm's Blog Version 1.0");</script>
 <script type='text/javascript'>$(document).ready(function(){$(".time").text(function(a,b){return Math.round(parseFloat(b))})});</script>
 {% if site.google_analytics %}
 <script>(function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","{{ site.google_analytics }}","auto");ga("require","displayfeatures");ga("send","pageview");</script>

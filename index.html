@@ -1,275 +1,103 @@
 ---
-permalink: /poster/
+layout: home
+title: 博客
+description: "这是我的博客."
+headline: An Engineer's Diary
+tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsylvania, doha, Qatar]
 ---
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
- <head>
-  <title>吕管明</title>
-  <style type="text/css">
-  html{
-	background-color: #F8F8F8;
-  }
-  body{
-	border: solid #B6B0B0 1px;
-	border-radius: 15px;
-	padding: 25px;
-	margin: 8px;
-	color: #000000;
-	background-color: #FFFFFF;
-	font-family:Georgia, serif, sans-serif;
-	text-align: justify;
-  }
-  .context{
-	background: #333;
-	border-radius: 10px;
-	background-repeat: no-repeat;
-	background-attachment:fixed;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	background-position:50% 50%; 
-	margin:0;
-	padding:0;
-	width:100%;
-	height:100%;
-	background-image:url(http://qn.image.lvgm.cn/index_bg.jpg);
-	-webkit-transition: All 2s ease;
-	-moz-transition: All 2s ease;
-	-o-transition: All 2s ease;
-	-ms-transition: All 2s ease;
-	transition: All 2s ease;
-  }
-
-
-#container{
-	padding:20px;
-	background-color:rgba(0,0,0,0.3);
-	border-radius: 18px;
-	color: #fefefe;
-	overflow: auto; 
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width:auto;
-	height:auto;
-	max-height: 70%;
-	min-width: 60%;
-	max-width: 40%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	transition: height 1s ease;
-	transition: top 1s ease;
-}
-
-#container p,
-#container a{
-	color: #fefefe;
-	text-shadow:0 1px 1px #333
-}
-
-#container a:hover{
-	color: #868686;
-	text-decoration: underline;
-}
-
-#footer {
-       border-top:1px solid #d3d3d3;
-}
-
-#foot-content{
-	float:right;	
-}
-
-#footer p{
-	text-align:right;
-}
-
-#footer-content a:hover{
-	background-color: #fefefe;
-	color: #222;
-}
-
-#footer-content a:hover{
-	padding: 0.3rem;
-	border-radius: 0.5em;
-}
-
-.logion{
-	padding-top:10px;
-	padding-bottom:10px;
-}
-
-#logion_text{
-	text-indent: 2em;
-	text-align: left;
-	line-height:150%;
-	font-size: 110%;
-	font-family: 'SimHei','Microsoft YaHei','STHeiti';
-	font-style: normal;
-}
-
-#logion_author{
-	text-align: right;
-	font-family: KaiTi_GB2312,BiauKai;
-	font-size: 110%;
-}
-#header{
-	border-bottom: 1px solid #d3d3d3;
-	display: relative;
-}
-
-#container h1{
-	font-size: 1.4rem;
-	line-height: 90%;
-	color: #fefefe;
-	float: none;
-	margin: auto;
-	padding-top: 0.4rem;
-	text-align: center;
-	font-weight: bolder;
-	text-shadow:0 1px 1px #333;
-}
-
-#header-content:hover h1{
-	text-decoration: underline;
-}
-
-#header-content h1:hover{
-	cursor:pointer;
-}
-
-
-#header-content p{
-	text-align: center;
-}
-
-#header-content{
-	display:block;
-	text-align: center;
-	margin: auto;
-}
-
-@media (min-width: 641px) and (max-width:770px){
-	#container{
-		min-width:80%;
-	}
-}
-@media (min-width: 400px) and (max-width:641px){
-	#container{
-		min-width:80%;
-	}
-}
-@media (min-width: 771px){
-	#container{
-		min-width:30%;
-	}
-}
-
-
-#up-arrow{
-	position: absolute;
-	right: 5px;
-	top: 5px;
-	width: 21px;
-	height: 21px;
-	background-image: url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==);
-	background-color: #fefefe;
-	border-radius: 100%;
-    cursor: n-resize;
-}
-
-
-#container.folded{
-	padding-top: 0px;
-	top:15px;
-	margin-top:5px;
-	height:10px;
-	overflow:hidden;
-}
-  </style>
- </head>
-
- <body>
-  <div id="context" class="context">
-	<div id="container">
-        <div id="container-inner">
-			<div id="header">
-				<div id="header-inner">
-					<div id="header-content" onclick="backgroundImage();return false;">
-						<h1>吕管明的个人网站</h1>
-						<p>Lv Guanming's Personal Website</p>
-					</div>
-				</div>
-			</div>
-			<div id="content">
-                <div id="content-inner">
-                    <div id="alpha">
-						<div id="alpha-inner">
-							<div class="logion">
-								<div id="logion_text">业精于勤，荒于嬉，行成于思，毁于随。</div>
-								<div id="logion_author">——（中国）　韩愈</div>
-							</div>
-							<div id="up-arrow" style="cursor: n-resize; background-image: url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==);">
-							</div>
-                        </div>
-                    </div>
-				<div id="beta">
-					<div id="beta-inner"></div>
-				</div>
-			</div>
-		</div>
-		<div id="footer">
-			<div id="footer-inner">
-				<div id="footer-content">
-					<p><a href="about">About</a> |<a href="/">Bolg</a> | © lvgm.cn</p>
-				</div>
-			</div>
-		</div>
-	</div>
-    </div>
-  </div>
-<script src="http://qn.image.lvgm.cn/logion.js"></script>
-<script>
-var pub_img_current_image;
-var logion_count = arrayObj.length;
-function backgroundImage(){
-	var pub_img_path='http://7.su.bdimg.com/skin/';
-	var pub_img_num = 149;
-	var pub_img_current_no=function(count){return Math.floor(Math.random()*count+1);};
-	var pub_img_url=function(){return pub_img_path+''+pub_img_current_no(pub_img_num)+'.jpg';};
-	if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
-	var context = document.getElementById('context');
-	context.style.backgroundImage='url('+(pub_img_current_image=pub_img_url())+')';
-
-	try{
-	var logion = arrayObj[pub_img_current_no(logion_count)];
-	document.getElementById('logion_text').innerText = unescape(logion.context);
-	document.getElementById('logion_author').innerText = unescape("%u2014%u2014"+logion.author);
-	}catch(err){}
-	
-}
-//backgroundImage();
-
-var up = document.getElementById('up-arrow');
-var upStatus = 0;
-up.addEventListener('click',function(){
-	if(upStatus === 0){
-		var container = document.getElementById('container');
-		container.setAttribute('class', 'folded');
-		up.style.backgroundImage = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAYAAAARfGZ1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHZSURBVEiJ7ZQ/ixpRFMXPeY6za7IEbbS1EGysUk0TkFjkI1imShFIioVASJsqW2wT8gW2TSsypBCLBLExEBgQ2cxodDdYKBhHDZv5c1Ooi4juGsIWCXvhNo97fu+++857FBHcVKgbI9/C/z84ROQyAahMJnMvn88fAIgB2AegA4guMrJoiAC4qt2UXPU5yT3DMB6l0+kHmqYpEQkWDTAMw8u6MAxJEiIiSikEQRAdjUY/Go3G8XA4HC/rtLVTXBiG0dR1/XkqlXqo6/rPMAw535cQES67XqxRRCKz2cydTqdPVsHAhpnX6/XTyWTy0nXdLyTvRiKRO0qpGMkYyX0AeyR1klEAmud5F7ZtvyiXy+/XWdz2/AuFwv1sNnsSj8dzMi8iyXBxQkUSnuf5rVbrValUOpYNoK1uqVQqn9vt9tPxePxVKbUcC0SESin4vh82m80jx3HebgJfCQcA0zQ/2bb9zHXdbyRBUiml6Pt+4DjOu06n88ayrF/b9Nf63DTND91u99B13e+apsHzPHEc56TX6722LGtylXbrzNejWCw+TiaTR4PB4GO/3z+sVqtn12l2hudyuYNEImEEQdCs1Wrnu2h2hgNzu2y7vL+G/2n8u7/iLXxj/AYhQQQGkT/xPgAAAABJRU5ErkJggg==)';
-        up.style.cursor = 's-resize'; 
-	} else{
-		var container = document.getElementById('container');
-		container.removeAttribute('class');
-		up.style.backgroundImage = 'url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==)';
-        up.style.cursor = 'n-resize';
-	}
-	upStatus = ~ upStatus;
-});
-</script>
- </body>
-</html>
+{% if site.paginate %}
+{% for post in paginator.posts %}
+{% assign readtime = post.content | strip_html | number_of_words | append: '.0' | divided_by:site.wpm %}
+{% assign modifiedtime = post.modified | date: "%Y%m%d" %}
+{% assign posttime = post.date | date: "%Y%m%d" %}
+<article class="animated-post notepad-index-post post row">
+<div class="small-12 medium-3 large-2 columns datetime">
+<span class="notepad-post-meta">
+<time datetime="{{ post.date | date_to_xmlschema }}">
+<span class="day">
+{{ post.date | date: "%d" }}
+</span>
+<span class="month-year">
+{{ post.date | date: "%B %Y" }}
+</span>
+{% if post.modified %}{% if modifiedtime != posttime %}
+<span class="month-year">
+<br>Updated on
+</span>
+<time datetime="{{ post.modified | date_to_xmlschema }}">
+<span class="month-year">
+{{ post.modified | date: "%d %B %Y" }}
+</span>
+{% endif %}{% endif %}
+</time>
+</span>
+</div>
+<div class="small-12 medium-9 large-10 columns">
+<header class="notepad-post-header">
+<h3 class="notepad-post-title">
+<a href="{{ site.url }}{{ post.url }}">
+{{ post.title }}
+</a>
+</h3>
+</header>
+<section class="notepad-post-excerpt">
+<p>{{ post.content | strip_html | truncatewords:40 }}</p>
+</section>
+<div class="notepad-index-post-tags">
+{% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}{% if site.readtime %}&nbsp;<a><i class="fa fa-clock-o"></i> {% if readtime > 1 and readtime < 1.5 %}1 minute read{% endif %}{% if readtime > 1.5 %}<span class="time">{{ readtime }}</span> minutes read{% endif %}{% if readtime < 1 %}Less than 1 minute read{% endif %}</a>{% endif %}{% if post.featured %}&nbsp;<a href="{{ site.url }}/featured"><i class="fa fa-star-half-o fa-spin"></i> Featured</a>{% endif %}{% if post.video %}&nbsp;<a><i class="fa fa-youtube-play"></i> Video</a>{% endif %}{% if post.location %}&nbsp;<a href="https://www.google.com/maps/place/{% if post.locationgps %}{{ post.locationgps }}{% else %}{{ post.location}}{% endif %}" target="_blank"><i class="fa fa-map-marker"></i> {{ post.location }}</a>{% endif %}
+</div>
+</div>
+</article>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+<nav class="pagination" role="navigation">
+{% if paginator.previous_page %}
+{% if paginator.previous_page == 1 %}
+<a class="newer-posts" href="{{ site.url }}"><i class="fa fa-chevron-left"></i> 新的</a>
+{% else %}
+<a class="newer-posts" href="{{ site.url }}/page{{ paginator.previous_page }}"><i class="fa fa-chevron-left"></i> 新的</a>
+{% endif %}
+{% else %}
+<span class="newer-posts faded"><i class="fa fa-chevron-left"></i> 新的</span>
+{% endif %}
+<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+{% if paginator.next_page %}
+<a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}/">旧的 <i class="fa fa-chevron-right"></i></a>
+{% else %}
+<span class="older-posts faded">旧的 <i class="fa fa-chevron-right"></i></span>
+{% endif %}
+</nav>
+{% endif %}
+{% else %}
+{% for post in site.posts %}
+<article class="notepad-index-post post row">
+<div class="small-12 medium-3 large-2 columns datetime">
+<span class="notepad-post-meta">
+<time datetime="{{ post.date | date_to_xmlschema }}">
+<span class="day">
+{{ post.date | date: "%d" }}
+</span>
+<span class="month-year">
+{{ post.date | date: "%B %Y" }}
+</span>
+</time>
+</span>
+</div>
+<div class="small-12 medium-9 large-10 columns">
+<header class="notepad-post-header">
+<h3 class="notepad-post-title">
+<a href="{{ site.url }}{{ post.url }}">
+{{ post.title }}
+</a>
+</h3>
+</header>
+<section class="notepad-post-excerpt">
+<p>{{ post.content | strip_html | truncatewords:100 }}</p>
+</section>
+<div class="notepad-index-post-tags">
+{% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+</div>
+</div>
+</article>
+{% endfor %}
+{% endif %}
