@@ -4,8 +4,16 @@
 <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a> on <a href="{{ site.url }}/update-log">{{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} UTC</a></section>
 </div>
 <div class="social-icons">
+{% if site.owner.weibo %}
+<a href="http://weibo.com/{{ site.owner.weibo }}" target="_blank">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+<i class="fa fa-weibo fa-stack-1x"></i>
+</span>
+</a>
+{% endif %}
 {% if site.owner.twitter %}
-<a href="http://twitter.com/{{ site.owner.twitter }}">
+<a href="http://twitter.com/{{ site.owner.twitter }}" target="_blank">
 <span class="fa-stack fa-lg">
 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
 <i class="fa fa-twitter fa-stack-1x"></i>
@@ -13,7 +21,7 @@
 </a>
 {% endif %}
 {% if site.owner.google_plus %}
-<a href="{{ site.owner.google_plus }}">
+<a href="{{ site.owner.google_plus }}" target="_blank">
 <span class="fa-stack fa-lg">
 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
 <i class="fa fa-google-plus fa-stack-1x"></i>
@@ -21,7 +29,7 @@
 </a>
 {% endif %}
 {% if site.owner.instagram %}
-<a href="http://instagram.com/{{ site.owner.instagram }}">
+<a href="http://instagram.com/{{ site.owner.instagram }}" target="_blank">
 <span class="fa-stack fa-lg">
 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
 <i class="fa fa-instagram fa-stack-1x"></i>
@@ -29,7 +37,7 @@
 </a>
 {% endif %}
 {% if site.owner.github %}
-<a href="http://github.com/{{ site.owner.github }}">
+<a href="http://github.com/{{ site.owner.github }}" target="_blank">
 <span class="fa-stack fa-lg">
 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
 <i class="fa fa-github fa-stack-1x"></i>
@@ -37,7 +45,7 @@
 </a>
 {% endif %}
 {% if site.owner.facebook %}
-<a href="http://facebook.com/{{ site.owner.facebook }}">
+<a href="http://facebook.com/{{ site.owner.facebook }}" target="_blank">
 <span class="fa-stack fa-lg">
 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
 <i class="fa fa-facebook fa-stack-1x"></i>
