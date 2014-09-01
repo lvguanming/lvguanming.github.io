@@ -22,7 +22,7 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
 </span>
 {% if post.modified %}{% if modifiedtime != posttime %}
 <span class="month-year">
-<br>Updated on
+<br>更新于
 </span>
 <time datetime="{{ post.modified | date_to_xmlschema }}">
 <span class="month-year">
@@ -44,7 +44,7 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
 <p>{{ post.content | strip_html | truncatewords:40 }}</p>
 </section>
 <div class="notepad-index-post-tags">
-{% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}{% if site.readtime %}&nbsp;<a><i class="fa fa-clock-o"></i> {% if readtime > 1 and readtime < 1.5 %}1 minute read{% endif %}{% if readtime > 1.5 %}<span class="time">{{ readtime }}</span> minutes read{% endif %}{% if readtime < 1 %}Less than 1 minute read{% endif %}</a>{% endif %}{% if post.featured %}&nbsp;<a href="{{ site.url }}/featured"><i class="fa fa-star-half-o fa-spin"></i> Featured</a>{% endif %}{% if post.video %}&nbsp;<a><i class="fa fa-youtube-play"></i> Video</a>{% endif %}{% if post.location %}&nbsp;<a href="https://www.google.com/maps/place/{% if post.locationgps %}{{ post.locationgps }}{% else %}{{ post.location}}{% endif %}" target="_blank"><i class="fa fa-map-marker"></i> {{ post.location }}</a>{% endif %}
+{% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" title="更多同类文章: {{ tag | capitalize }} ">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}{% if site.readtime %}&nbsp;<a><i class="fa fa-clock-o"></i> 阅读时间约 {% if readtime > 1 and readtime < 1.5 %}1 分钟{% endif %}{% if readtime > 1.5 %}<span class="time"> {{ readtime }}</span> 分钟{% endif %}{% if readtime < 1 %}少于1分钟{% endif %}</a>{% endif %}{% if post.featured %}&nbsp;<a href="{{ site.url }}/featured"><i class="fa fa-star-half-o fa-spin"></i> 精选</a>{% endif %}{% if post.video %}&nbsp;<a><i class="fa fa-youtube-play"></i> 视频</a>{% endif %}{% if post.location %}&nbsp;<a href="https://www.google.com/maps/place/{% if post.locationgps %}{{ post.locationgps }}{% else %}{{ post.location}}{% endif %}" target="_blank"><i class="fa fa-map-marker"></i> {{ post.location }}</a>{% endif %}
 </div>
 </div>
 </article>
@@ -53,18 +53,18 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
 <nav class="pagination" role="navigation">
 {% if paginator.previous_page %}
 {% if paginator.previous_page == 1 %}
-<a class="newer-posts" href="{{ site.url }}"><i class="fa fa-chevron-left"></i> 新的</a>
+<a class="newer-posts" href="{{ site.url }}"><i class="fa fa-chevron-left"></i> 更新的</a>
 {% else %}
-<a class="newer-posts" href="{{ site.url }}/page{{ paginator.previous_page }}"><i class="fa fa-chevron-left"></i> 新的</a>
+<a class="newer-posts" href="{{ site.url }}/page{{ paginator.previous_page }}"><i class="fa fa-chevron-left"></i> 更新的</a>
 {% endif %}
 {% else %}
-<span class="newer-posts faded"><i class="fa fa-chevron-left"></i> 新的</span>
+<span class="newer-posts faded"><i class="fa fa-chevron-left"></i> 更新的</span>
 {% endif %}
 <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 {% if paginator.next_page %}
-<a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}/">旧的 <i class="fa fa-chevron-right"></i></a>
+<a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}/">更旧的 <i class="fa fa-chevron-right"></i></a>
 {% else %}
-<span class="older-posts faded">旧的 <i class="fa fa-chevron-right"></i></span>
+<span class="older-posts faded">更旧的 <i class="fa fa-chevron-right"></i></span>
 {% endif %}
 </nav>
 {% endif %}
@@ -95,7 +95,7 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
 <p>{{ post.content | strip_html | truncatewords:100 }}</p>
 </section>
 <div class="notepad-index-post-tags">
-{% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+{% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" title="更多同类文章:  {{ tag | capitalize }} ">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
 </div>
 </div>
 </article>

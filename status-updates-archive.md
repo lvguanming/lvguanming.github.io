@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /status-updates-archive/
-title: "Status Updates Archive"
+title: "存档更新状态"
 description:
 modified: 2014-08-12 22:26:24 +0600
 ---
