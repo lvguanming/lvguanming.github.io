@@ -1,0 +1,58 @@
+<meta charset="utf-8">
+<title>{% if page.title %}{{ page.title | upcase }} | {% endif %}{{ site.title | upcase }}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+{% if site.owner.twitter %}
+{% if page.imagefeature %}<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site.url }}/images/cover/{{ page.imagefeature }}">
+{% else %}<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="{% if page.imagethumb %}{{ site.url }}/images/thumb/{{ page.imagethumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">{% endif %}
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:creator" content="@{{ site.owner.twitter }}">{% endif %}
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+{% if page.imagefeature %}<meta property="og:image" content="{{ site.url }}/images/cover/{{ page.imagefeature }}">{% else %}{% if site.default_bg }}<meta property="og:image" content="{{ site.url }}/images/{{ site.default_bg }}">{% else %}<meta property="og:image" content="{{ site.url }}/images/{{ site.logo }}">{% endif %}{% endif %}
+{% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+{% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
+{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+<link rel="canonical" href="{{ canonical }}">
+<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% if site.owner.google_plus %}<link rel="author" href="{{ site.owner.google_plus }}?rel=author">{% endif %}
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+{% if site.theme %}
+<link rel="stylesheet" href="{{ site.url }}/assets/css/theme/{{ site.theme }}/combined.css">
+{% else %}
+<link rel="stylesheet" href="{{ site.url }}/assets/css/combined.css">
+{% endif %}
+{% if page.chart or page.jquery %}<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>/*<![CDATA[*/window.jQuery||document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.11.1.min.js"><\/script>');/*]]>*/</script>{% endif %}
+{% if page.chart %}
+<script type="text/javascript" src="{{ site.url }}/assets/js/vendor/amcharts.js"></script>
+{% if page.charttype == 'pie' %}<script type="text/javascript" src="http://cdn.amcharts.com/lib/3/pie.js"></script>{% endif %}
+{% if page.charttype == 'serial' %}<script type="text/javascript" src="http://cdn.amcharts.com/lib/3/serial.js"></script>{% endif %}
+{% endif %}
+{% if page.mathjax %}
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>MathJax.Hub.Config({config:["MMLorHTML.js"],extensions:["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],jax:["input/TeX"],tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:false},TeX:{TagSide:"right",TagIndent:".8em",MultLineWidth:"85%",equationNumbers:{autoNumber:"AMS",},unicode:{fonts:"STIXGeneral,'Arial Unicode MS'"}},showProcessingMessages:false});</script>{% endif %}
+{% if site.theme %}
+<link rel="shortcut icon" href="{{ site.url }}/images/theme/{{ site.theme }}/favicon.ico">
+<link rel="shortcut icon" href="{{ site.url }}/images/theme/{{ site.theme }}/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/theme/{{ site.theme }}/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/images/theme/{{ site.theme }}/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/images/theme/{{ site.theme }}/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/images/theme/{{ site.theme }}/apple-touch-icon-144x144-precomposed.png">
+{% else %}
+<link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+<link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png">
+{% endif %}
