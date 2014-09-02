@@ -8,7 +8,7 @@ comments: false
 chart: false
 tags: fitness gym
 categories: 
-  - personal
+  - 个人
 location: "Mirpur 11, Bangladesh"
 ---
 

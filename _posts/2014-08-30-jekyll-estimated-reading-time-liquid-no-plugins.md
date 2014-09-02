@@ -8,7 +8,7 @@ comments: true
 chart: false
 description: Implementing Medium inspired Estimated Reading Time (ERT) Calculator on Github Pages with Jekyll
 categories: 
-  - webdevelopment
+  - web开发
 tags: jekyll reading time
 ---
 

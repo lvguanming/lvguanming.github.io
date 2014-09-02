@@ -8,7 +8,7 @@ comments: false
 chart: false
 description: Connected to the Information Highway 24/7.
 categories: 
-  - thoughts
+  - 想法
 tags: life technology
 imagefeature: 7.jpg
 location: "Mirpur 11, Bangladesh"

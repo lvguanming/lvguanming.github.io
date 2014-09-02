@@ -7,7 +7,7 @@ featured: false
 comments: false
 chart: false
 categories: 
-  - personal
+  - 个人
 tags: policy
 ---
 
