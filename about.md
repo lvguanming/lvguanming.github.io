@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/
-title: Hossain Mohd Faysal
+title: 关于
 tags: [Hossain, Mohd, Faysal, hmfaysal]
 imagefeature: fourseasons.jpg
 chart: true
@@ -9,7 +9,7 @@ charttype: pie
 ---
 <figure>
   <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
-  <figcaption>Hossain Mohammad Faysal</figcaption>
+  <figcaption>吕管明</figcaption>
 </figure>
 
 {% assign total_words = 0 %}
