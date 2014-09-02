@@ -126,7 +126,7 @@ prose:
               value: psychology
             - name: "Interesting"
               value: interesting
-            - name: "Web开发"
+            - name: "Web-Development"
               value: webdevelopment
           alterable: true
       - name: "tags"
