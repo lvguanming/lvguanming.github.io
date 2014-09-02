@@ -60,7 +60,7 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
 {% else %}
 <span class="newer-posts faded"><i class="fa fa-chevron-left"></i> 更新的</span>
 {% endif %}
-<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+<span class="page-number">第 {{ paginator.page }}/{{ paginator.total_pages }} 页</span>
 {% if paginator.next_page %}
 <a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}/">更旧的 <i class="fa fa-chevron-right"></i></a>
 {% else %}

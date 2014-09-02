@@ -38,10 +38,10 @@ owner:
 # Links to include in footer navigation
 # For external links add external: true
 links:
-  - title: 封面
-    url: /poster
-    external: false
-    icon: home
+  # - title: 封面
+  #   url: /poster
+  #   external: false
+  #   icon: home
   - title: 主页
     url: /
     external: false
