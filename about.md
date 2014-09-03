@@ -2,13 +2,13 @@
 layout: page
 permalink: /about/
 title: 关于
-tags: [Hossain, Mohd, Faysal, hmfaysal]
+tags: [吕管明]
 imagefeature: fourseasons.jpg
 chart: true
 charttype: pie
 ---
 <figure>
-  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
+  <img src="{{ site.url }}/images/me-and-myself.jpg" alt="我和自己">
   <figcaption>吕管明</figcaption>
 </figure>
 
@@ -45,32 +45,33 @@ I am an PhD candidate in *ESE* at the [SEAS](http://www.seas.upenn.edu/) at **UP
 Currently I am working on solid state electronics and trying to figure out novel methods to develop computer architectures with carbon nanotubes. My research interest lie from Computational Mathematics to Quantum Physics to Numerical Analysis.
 
 <figure>
-	<img src="{{ site.url }}/images/Hossain-Mohd-Faysal.jpg" alt="Hossain Mohammad Faysal">
-	<figcaption>At Bates Linear Accelerator Center</figcaption>
+	<img src="{{ site.url }}/images/20100818336.jpg" alt="Hossain Mohammad Faysal">
+	<figcaption>2010年，长春农业博览会</figcaption>
 </figure>
 
 I was born and brought up in Doha. Yes, its a desert peninsula, yes we have camels and falcons and all the other Middle Eastern traits/stereotypes you can think of.
 
 <figure class="third">
-	<a href="{{ site.url }}/images/about/1.jpg" title="Doha Skyline at Night"><img src="{{ site.url }}/images/about/1-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/2.jpg" title="Camels basking the sun at UmmSaieed Beach Resort"><img src="{{ site.url }}/images/about/2-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/3.jpg" title="Me with a Qatari Falcon"><img src="{{ site.url }}/images/about/3-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/1.jpg" title="我家的样子"><img src="{{ site.url }}/images/about/1-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/2.jpg" title="傍晚时分，牛羊下来"><img src="{{ site.url }}/images/about/2-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/3.jpg" title="放羊的人-我"><img src="{{ site.url }}/images/about/3-001.jpg"></a>
 </figure>
 <figure class="half">
-	<a href="{{ site.url }}/images/about/4.jpg" title="Sand Dunes"><img src="{{ site.url }}/images/about/4-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/5.jpg" title="West Bay Financial District"><img src="{{ site.url }}/images/about/5-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/4.jpg" title="长春工程学院-母校"><img src="{{ site.url }}/images/about/4-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/5.jpg" title="假期里安静的校园，宿舍"><img src="{{ site.url }}/images/about/5-001.jpg"></a>
 </figure>
 <figure class="third">
-	<a href="{{ site.url }}/images/about/6.jpg" title="Doha Skyline from the Corniche"><img src="{{ site.url }}/images/about/6-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/7.jpg" title="Two Eagles soar high in the sky"><img src="{{ site.url }}/images/about/7-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/8.jpg" title="Grand Hyatt Doha lobby"><img src="{{ site.url }}/images/about/8-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/6.jpg" title="长春图书博览会"><img src="{{ site.url }}/images/about/6-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/7.jpg" title="校园><img src="{{ site.url }}/images/about/7-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/8.jpg" title="内蒙的羊肉吃饭"><img src="{{ site.url }}/images/about/8-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/9.jpg" title="爱车"><img src="{{ site.url }}/images/about/9-001.jpg"></a>
 	<figcaption>Doha at its full glory.</figcaption>
 </figure>
 
 I have one elder sister-- a graduate in Computer Applications-- currently living in Tokyo, Japan. My father is an Electrical Engineer and he works for the Qatar Electricity and Water Corporation(KAHRAMAA) in Doha, Qatar. My mother holds a Masters degree in Contemporary Bengali Literature, and well she is a house-maker. 
 
 <figure>
-	<img src="{{ site.url }}/images/world-map.jpg" alt="Places of Importance">
+	<img src="{{ site.url }}/images/china-map.jpg" alt="Places of Importance">
 	<figcaption>Places of Importance</figcaption>
 </figure>
 
