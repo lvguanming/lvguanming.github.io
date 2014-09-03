@@ -59,12 +59,11 @@ I was born and brought up in Doha. Yes, its a desert peninsula, yes we have came
 <figure class="half">
 	<a href="{{ site.url }}/images/about/4.jpg" title="长春工程学院-母校"><img src="{{ site.url }}/images/about/4-001.jpg"></a>
 	<a href="{{ site.url }}/images/about/5.jpg" title="假期里安静的校园，宿舍"><img src="{{ site.url }}/images/about/5-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/7.jpg" title="校园"><img src="{{ site.url }}/images/about/7-001.jpg"></a>
 </figure>
 <figure class="third">
-	<a href="{{ site.url }}/images/about/6.jpg" title="长春图书博览会"><img src="{{ site.url }}/images/about/6-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/8.jpg" title="内蒙的羊肉吃饭"><img src="{{ site.url }}/images/about/8-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/9.jpg" title="爱车"><img src="{{ site.url }}/images/about/9-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/6.jpg" title="颐和园南路"><img src="{{ site.url }}/images/about/6-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/7.jpg" title="夜行长安街"><img src="{{ site.url }}/images/about/7-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/8.jpg" title="爱车"><img src="{{ site.url }}/images/about/8-001.jpg"></a>
 	<figcaption>Doha at its full glory.</figcaption>
 </figure>
 
@@ -72,7 +71,7 @@ I have one elder sister-- a graduate in Computer Applications-- currently living
 
 <figure>
 	<img src="{{ site.url }}/images/china-map.jpg" alt="Places of Importance">
-	<figcaption>Places of Importance</figcaption>
+	<figcaption>三个重要的城市</figcaption>
 </figure>
 
 
