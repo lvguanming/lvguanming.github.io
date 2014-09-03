@@ -41,7 +41,7 @@ tags: [北京, 吕管明, 工程师, 博客, 个人网站, github, Jekyll, Qatar
 </h3>
 </header>
 <section class="notepad-post-excerpt">
-<p>{{ post.content | strip_html | truncatewords:40 }}</p>
+<p>{{ post.content | strip_html | truncate:140 }}</p>
 </section>
 <div class="notepad-index-post-tags">
 {% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ tag | cgi_encode }}" title="更多同类文章: {{ tag | capitalize }} ">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}{% if site.readtime %}&nbsp;<a><i class="fa fa-clock-o"></i> 阅读时间约 {% if readtime > 1 and readtime < 1.5 %}1 分钟{% endif %}{% if readtime > 1.5 %}<span class="time"> {{ readtime }}</span> 分钟{% endif %}{% if readtime < 1 %}少于1分钟{% endif %}</a>{% endif %}{% if post.featured %}&nbsp;<a href="{{ site.url }}/featured"><i class="fa fa-star-half-o fa-spin"></i> 精选</a>{% endif %}{% if post.video %}&nbsp;<a><i class="fa fa-youtube-play"></i> 视频</a>{% endif %}{% if post.location %}&nbsp;<a href="https://www.google.com/maps/place/{% if post.locationgps %}{{ post.locationgps }}{% else %}{{ post.location}}{% endif %}" target="_blank"><i class="fa fa-map-marker"></i> {{ post.location }}</a>{% endif %}
