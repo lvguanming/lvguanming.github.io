@@ -45,7 +45,7 @@ I am an PhD candidate in *ESE* at the [SEAS](http://www.seas.upenn.edu/) at **UP
 Currently I am working on solid state electronics and trying to figure out novel methods to develop computer architectures with carbon nanotubes. My research interest lie from Computational Mathematics to Quantum Physics to Numerical Analysis.
 
 <figure>
-	<img src="{{ site.url }}/images/20100818336.jpg" alt="Hossain Mohammad Faysal">
+	<img src="{{ site.url }}/images/20100818336.jpg" alt="我和自己">
 	<figcaption>2010年，长春农业博览会</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ I was born and brought up in Doha. Yes, its a desert peninsula, yes we have came
 <figure class="third">
 	<a href="{{ site.url }}/images/about/6.jpg" title="颐和园南路"><img src="{{ site.url }}/images/about/6-001.jpg"></a>
 	<a href="{{ site.url }}/images/about/7.jpg" title="夜行长安街"><img src="{{ site.url }}/images/about/7-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/8.jpg" title="爱车"><img src="{{ site.url }}/images/about/8-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/8.jpg" title="被盗的爱车"><img src="{{ site.url }}/images/about/8-001.jpg"></a>
 	<figcaption>Doha at its full glory.</figcaption>
 </figure>
 
