@@ -28,7 +28,7 @@ charttype: pie
 {% endfor %}
 {% for status in site.data.statuses %}{% assign statuscount = statuscount | plus:1 %}{% endfor %}
 
-欢迎来访 **《吕管明的网络日志》**, 这是我的个人网站。到目前为止，一共写了{{ site.posts | size }}篇文章（总共约 {{ total_words }} 多字），分别发布在{{ site.categories | size }}个分类下。大约平均需要 <span class="time">{{ total_readtime }}</span> 分钟可以读完（按每分钟{{ site.wpm }}字计算)。{% if featuredcount != 0 %}其中，共有<a href="{{ site.url }}/featured">{{ site.categories | size }}篇</a>精选文章，推荐给你。{% endif %} 最近写的{% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="阅读 {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} 于 {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>发布。{% if post.modified %}{% if modifiedtime != posttime %} 并且于 <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>做了更新{% endif %}{% endif %}{% endfor %}。最后一次提交于 {{ site.time | date: "%Y年%m月%d日 %H点%M分" }}。查看所有更新日志，可以点击 [这里]({{ site.url }}/update-log)。
+欢迎来访 **《吕管明的网络日志》**, 这是我的个人网站。到目前为止，一共写了{{ site.posts | size }}篇文章（总共约 {{ total_words }} 多字），分别发布在{{ site.categories | size }}个分类下。大约平均需要<span class="time">{{ total_readtime }}</span> 分钟可以读完（按每分钟{{ site.wpm }}字计算)。{% if featuredcount != 0 %}其中，共有<a href="{{ site.url }}/featured">{{ site.categories | size }}篇</a>精选文章，推荐给你。{% endif %} 最近写的{% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="阅读 {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} 于 {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%Y年%m月%d日%H点%M分" }}</time>发布。{% if post.modified %}{% if modifiedtime != posttime %} 并且于 <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%Y年%m月%d日%H点%M分" }}</time>做了更新。{% endif %}{% endif %}{% endfor %}最后一次提交于 {{ site.time | date: "%Y年%m月%d日%H点%M分" }}。查看所有更新日志，可以点击 [这里]({{ site.url }}/update-log)。
 
 共发布了 [{{ statuscount }} 条状态信息]({{ site.url }}/status-updates-archive)。
 
@@ -78,7 +78,7 @@ charttype: pie
 
 ```
 做我爱做的事，爱我所做的事。
-**I make what I love，I love what I do.**
+I make what I love，I love what I do.
 ```
 
 总之：
