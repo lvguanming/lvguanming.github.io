@@ -28,97 +28,67 @@ charttype: pie
 {% endfor %}
 {% for status in site.data.statuses %}{% assign statuscount = statuscount | plus:1 %}{% endfor %}
 
-My name is **Hossain Mohd. Faysal**, and this is my personal blog. It currently has {{ site.posts | size }} posts in {{ site.categories | size }} categories which combinedly have {{ total_words }} words, which will take an average reader ({{ site.wpm }} WPM) approximately <span class="time">{{ total_readtime }}</span> minutes to read. {% if featuredcount != 0 %}There are <a href="{{ site.url }}/featured">{{ featuredcount }} featured posts</a>, you should definitely check those out.{% endif %} The most recent post is {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} which was published on {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %}. The last commit was on {{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time "Temps Universel Coordonné"). Check out the update log [here]({{ site.url }}/update-log).
+欢迎来访 **吕管明的网络日志**, 这是我的个人网站。到目前为止，一共写了{{ site.posts | size }}篇文章（总共约 {{ total_words }} 多字），分别发布在{{ site.categories | size }}个分类下。大约平均需要 <span class="time">{{ total_readtime }}</span> 分钟可以读完（按每分钟{{ site.wpm }}字计算)。{% if featuredcount != 0 %}其中，共有<a href="{{ site.url }}/featured">{{ site.categories | size }}篇</a>精选文章，推荐给你。{% endif %} 最近写的{% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="阅读 {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} 于 {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>发布。{% if post.modified %}{% if modifiedtime != posttime %} 并且于 <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>做了更新{% endif %}{% endif %}{% endfor %}。最后一次提交于 {{ site.time | date: "%Y年%m月%d日 %H点%M分" }}。查看所有更新日志，可以点击 [这里]({{ site.url }}/update-log)。
 
-Currently there are [{{ statuscount }} status messages.]({{ site.url }}/status-updates-archive)
+共发布了 [{{ statuscount }} 条状态信息]({{ site.url }}/status-updates-archive)。
 
 <div class="chart" id="chartdiv" style="width: 100%; height: 500px; margin-bottom: 20px;" ></div>
-
-I am an PhD candidate in *ESE* at the [SEAS](http://www.seas.upenn.edu/) at **UPENN**. I am licensed as a Professional Engineer (P.E) to practice in the states of Texas, Massachusetts and California. I double majored in EECS and Mathematics during my undergraduate life at [MIT](http://www.mit.edu/), and currently focusing on Electrical Engineering for my post-graduate studies.
-
-*[ESE]: Electrical and Systems Engineering
-*[SEAS]: School of Engineering and Applied Science
-*[MIT]: Massachusetts Institute of Technology
-*[EECS]: Electrical and Computer Engineering
-*[UPENN]: University of Pennsylvania
-
-Currently I am working on solid state electronics and trying to figure out novel methods to develop computer architectures with carbon nanotubes. My research interest lie from Computational Mathematics to Quantum Physics to Numerical Analysis.
+##关于我##
+中国内蒙人，80后，集“农民、工人、知识分子等多种身份”于一身，非国家“985”、“211”院校计算机专业本科毕业，爱好技术和文学；专注于科技和人文方面的知识和技能，我对一切未知的东西保持敬畏，具备起码的审美能力，从小就有几个梦想——发明家、作家、科学家。:-)
+大学时在东北，现为北漂「IT工程师」。没什么吹的，这里省略X个字。
 
 <figure>
 	<img src="{{ site.url }}/images/20100818336.jpg" alt="我和自己">
 	<figcaption>2010年，长春农业博览会</figcaption>
 </figure>
 
-I was born and brought up in Doha. Yes, its a desert peninsula, yes we have camels and falcons and all the other Middle Eastern traits/stereotypes you can think of.
+我出生在内蒙古呼和浩特南部一个比较偏远的山区，没错，是内蒙古，是个有牛羊却没有草原的地方，一望无际的是沟壑纵横、支离破碎的黄土高原地貌；虽属内蒙古，但有的却是典型的陕北风土人情。由于要上学，不得不离开长大的地方，走进城市，开始时都无法适应陌生的城市，事实证明，时间久了，总是会喜欢上常年呆过的城市，正所谓日久生情。而每个城市有每个城市的性格，也影响着人的性格。我所呆过的城市，将我彻底改变，随着时代的变迁和时间的推移，所有的改变，导致的结果是再也回曾不去长大的农村，同时也很难成为一个名副其实的城市人。
 
 <figure class="third">
-	<a href="{{ site.url }}/images/about/1.jpg" title="我家的样子"><img src="{{ site.url }}/images/about/1-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/2.jpg" title="傍晚时分，牛羊下来"><img src="{{ site.url }}/images/about/2-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/3.jpg" title="放羊的人-我"><img src="{{ site.url }}/images/about/3-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/1.jpg" title="家乡"><img src="{{ site.url }}/images/about/1-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/2.jpg" title="牛羊下来"><img src="{{ site.url }}/images/about/2-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/3.jpg" title="放羊的人"><img src="{{ site.url }}/images/about/3-001.jpg"></a>
 </figure>
 <figure class="half">
-	<a href="{{ site.url }}/images/about/4.jpg" title="长春工程学院-母校"><img src="{{ site.url }}/images/about/4-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/5.jpg" title="假期里安静的校园，宿舍"><img src="{{ site.url }}/images/about/5-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/4.jpg" title="长春工程学院"><img src="{{ site.url }}/images/about/4-001.jpg"></a>
+	<a href="{{ site.url }}/images/about/5.jpg" title="假期里安静的校园"><img src="{{ site.url }}/images/about/5-001.jpg"></a>
 </figure>
 <figure class="third">
 	<a href="{{ site.url }}/images/about/6.jpg" title="颐和园南路"><img src="{{ site.url }}/images/about/6-001.jpg"></a>
 	<a href="{{ site.url }}/images/about/7.jpg" title="夜行长安街"><img src="{{ site.url }}/images/about/7-001.jpg"></a>
 	<a href="{{ site.url }}/images/about/8.jpg" title="被盗的爱车"><img src="{{ site.url }}/images/about/8-001.jpg"></a>
-	<figcaption>Doha at its full glory.</figcaption>
+	<figcaption>这是一些非常有趣的记录</figcaption>
 </figure>
 
-I have one elder sister-- a graduate in Computer Applications-- currently living in Tokyo, Japan. My father is an Electrical Engineer and he works for the Qatar Electricity and Water Corporation(KAHRAMAA) in Doha, Qatar. My mother holds a Masters degree in Contemporary Bengali Literature, and well she is a house-maker. 
+我去过国内一些城市，但目前还没出过国。
 
 <figure>
-	<img src="{{ site.url }}/images/china-map.jpg" alt="Places of Importance">
-	<figcaption>三个重要的城市</figcaption>
+	<img src="{{ site.url }}/images/my-city.jpg" alt="重要的城市">
+	<figcaption>三个对我重要影响深远的城市(截至2014年)</figcaption>
 </figure>
 
+##关于网站##
+2012年5月，工信部消息称开放`.CN`域名个人注册，这真是个好消息，就在儿童节的那天，注册了现在这个域名：`lvgm.cn`，喜欢的是——“lvgm”正好是当时工作单位的员工ID，“cn”是中国的意思(我是中国人)。从此，在国际互联网上有了自己的唯一标识，因此兴奋了好久。也是从这时起对域名这种虚拟的东西产生了兴趣。
 
-At some point in the not-terribly-distant future, I hope to found a self-sustaining collective of clever people, for fun, profit(?), and the promotion of human life in the universe. This might wind up in Qatar, Bangladesh, Scandinavia, the Massachusetts Bay Area, the SF Bay Area, Japan, Germany, or the dustbin of overly idealistic plans. (Yes, I have a special bin for overly idealistic plans. In my district they can't be recycled with residential mixed paper.) The most challenging aspect of this concept is to curtail unproductive competition with other people who will inevitably have the same idea. (Some sort of cooperative federation...) I'm presently looking for people who might be interested in being a part of such an organization.
+之前的个人网站建立在网站空间和AWS上，主要是为了玩。基本能写东西也没有让人知道。直到GitHub的出现，2014年春运期间，GitHub因服务器被表面上毫不相干的中国春运抢票潮给拖垮而闻名中国IT界，从此红遍了中国。GitHub的伟大之处在于人们可以在上面自由创造、分享和发掘好东西，是之所以号称程序员的Facebook的原因。GitHub提供的GitHub Pages的另类绝佳的博客解决方案，绑定域名后就是个人网站了，决定再次转移网站到GitHub落户，从此不再浪迹天涯了。希望今后能在其上面创造奇妙的东西。
 
-Anyways, for now I'm just working toward changing the face of Electrical Engineering forever. Not that I necessarily expect to succeed, but it's something to strive for, and it's a fun problem to work on.
+在这里，预计可能会有：学习笔记，工作备忘，生活记录，扯淡杂谈。
+*做我爱做的事，爱我所做的事*（I make what I love，*I love what I do.*）
 
+总之：
 
-Entrepreneur  
-Designer  
-***Engineer***  
-Inventor  
-
-I
-make
-stuff.
-
-
-*Beautiful, practical, meaningful stuff.*
-
-
-I make what I love.
-
-*I love what I do.*
-
-
-But over the years, I noticed that somehow, along the way, software designed to help us be creative, actually made us less creative. That's because we believe our best ideas emerge when we use pencils and paper.
-So I set out to build tools that work the way I do.
-
-
-Tools for the creative space — the 53 centimeters that magically link head, heart, and hand. Tools as simple as pencil and paper. Tools so essential, I  really can't imagine work without them.
-
-
-For
-the makers,  
-the creators,  
-the discoverers,  
-the original thinkers,  
-***This is the space to create.***
-
+- 作为一个IT互联网技术从业者，很应该需要有这么个东西。
+- 作为一个热爱生活的人，有必要分享一些有用的东西为了这个世界。
+- 信息爆炸的时代，需要找个地方安顿一下浮躁、混乱不堪心。
+- 找回人类应该有的思考能力，试图找到文字的力量。
+- 可以满足若干种兴趣爱好。
 <!-- amCharts javascript code -->
 <script type="text/javascript">
 	AmCharts.makeChart("chartdiv",
 		{
 			"type": "pie",
 			"pathToImages": "http://cdn.amcharts.com/lib/3/images/",
-			"balloonText": "Category: [[title]]<br><span style='font-size:14px'><b>[[value]] Posts</b> ([[percents]]%)</span>",
+			"balloonText": "分类: [[title]]<br><span style='font-size:14px'><b>[[value]] 篇文章</b> ([[percents]]%)</span>",
 			"innerRadius": "40%",
 			"minRadius": 100,
 			"pullOutRadius": "15%",
@@ -166,7 +136,7 @@ the original thinkers,
 			"titles": [
 				{
 					"id": "Title-1",
-					"text": "Number of Posts Breakdown"
+					"text": "分类文章数"
 				}
 			],
       "dataProvider": [
