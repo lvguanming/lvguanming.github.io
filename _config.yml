@@ -118,16 +118,12 @@ prose:
           options:
             - name: "Personal"
               value: personal
-            - name: "Engineering"
-              value: engineering
-            - name: "Physics"
-              value: physics
-            - name: "Psychology"
-              value: psychology
+            - name: "Technology"
+              value: technology
+            - name: "Thought"
+              value: thought
             - name: "Interesting"
               value: interesting
-            - name: "Web-Development"
-              value: webdevelopment
             - name: "Travel"
               value: travel
           alterable: true
