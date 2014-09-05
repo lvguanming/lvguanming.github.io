@@ -4,11 +4,11 @@ published: true
 title: 秋意浓
 mathjax: false
 featured: false
-comments: false
+comments: true
 chart: false
-description: 秋天来了
+description: "秋天来了，冬天还会远吗?"
 categories: 
-  - thought	
+  - thought
 tags: 生活 总结
 imagefeature: 7.jpg
 location: "延静里中街, 北京, 中国"
