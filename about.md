@@ -8,7 +8,7 @@ chart: true
 charttype: pie
 ---
 <figure>
-  <img src="{{ site.url }}/images/me-and-myself.jpg" alt="我和自己">
+  <img src="{{ site.imageurl }}/me-and-myself.jpg" alt="我和自己">
   <figcaption>吕管明</figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ charttype: pie
 大学时在东北，现为北漂「IT工程师」。没什么吹的，这里省略X个字。
 
 <figure>
-	<img src="{{ site.url }}/images/20100818336.jpg" alt="我和自己">
+	<img src="{{ site.imageurl }}/20100818336.jpg" alt="2010">
 	<figcaption>2010年，长春农业博览会</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ charttype: pie
 我只去过国内一些城市，但目前还没出过国。呼和浩特、长春、北京——我呆过的三个城市，都给我我太多太多。
 
 <figure>
-	<img src="{{ site.url }}/images/my-city.jpg" alt="重要的地方">
+	<img src="{{ site.imageurl }}/my-city.jpg" alt="重要的地方">
 	<figcaption>三个对我重要影响深远的城市(截至2014年)</figcaption>
 </figure>
 
