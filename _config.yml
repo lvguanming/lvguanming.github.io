@@ -12,7 +12,7 @@ header_bg:        alleyway.jpg
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 url:              http://lvgm.cn
-imageurl	   http://qn.image.lvgm.cn
+imageurl:         http://qn.image.lvgm.cn
 
 # Owner/author information
 owner:
