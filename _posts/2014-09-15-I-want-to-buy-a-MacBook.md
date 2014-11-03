@@ -8,7 +8,7 @@ description: "MacBook，苹果电脑"
 categories: 
   - personal
 tags: MacBook
-imagefeature: {{ site.imageurl }}/14-11-03-macbook.jpg
+imagefeature: maclogo.jpg
 ---
 
 It is good .The first time to use Debian Linux .
