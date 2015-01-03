@@ -2,7 +2,6 @@
 layout: post
 published: true
 title: 新年快乐
-featured: true
 comments: true
 description: "2015，新年快乐"
 categories: 
