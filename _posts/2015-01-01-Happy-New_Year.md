@@ -4,11 +4,12 @@ published: true
 title: 新年快乐
 featured: true
 comments: true
-description: "元旦快乐“
+description: "2015，新年快乐"
 categories: 
   - personal
-tags: personal
+tags: Personal
 ---
+
 新年好，2014年，即将一切都如云烟。2015,任务依旧严峻，压力依然山大。愿付出和收获等比例增长。
 美好的总是会来的，只要去相信美好。
 世界上没有什么比真诚善良更容易体会到再纯真的美好了，因为真诚和善良本来就是一种美好。
