@@ -1,9 +1,9 @@
 ---
 layout: post
 published: true
-title: 啊，第一次开车
+title: 第一次开车
 comments: true
-description: ""
+description: "啊，这是我第一次开车"
 categories: 
   - personal
 tags: Personal
