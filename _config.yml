@@ -7,7 +7,7 @@ readtime:		  true
 wpm:			  200
 dropcap:		  true
 theme:			  blue
-header_bg:        railway.jpg
+header_bg:        blog/img/slider1.jpg
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
@@ -20,7 +20,7 @@ owner:
   avatar:         lvguanming.jpg
   email:          lvgm2013@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    白日梦想家！知我者，谓我心忧；不知我者， 谓我何求。做爱做的事，爱所做的事。 
+  description:    我唯一可以确定是事情是“自己是无知的”。性情温和善良、情绪多变但从不生气，强迫症晚期患者，间歇性文青综合症。 
   # Social networking links used in footer. Update and remove as you like.
   weibo:          lguanming
   twitter:        lvguanming
