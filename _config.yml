@@ -11,8 +11,8 @@ header_bg:        blog/img/slider1.jpg
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:              http://lvgm.cn
-imageurl:         http://qn.image.lvgm.cn
+url:              https://lvgm.cn
+imageurl:         https://qn.image.lvgm.cn
 
 # Owner/author information
 owner:
@@ -80,8 +80,8 @@ kramdown:
     coderay_css: class
 
 prose:
-  siteurl: 'http://lvgm.cn/'
-  relativeLinks: 'http://lvgm.cn/links.jsonp'
+  siteurl: 'https://lvgm.cn/'
+  relativeLinks: 'https://lvgm.cn/links.jsonp'
   media: 'images'
   metadata:
     _posts:
